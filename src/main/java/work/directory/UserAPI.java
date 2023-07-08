@@ -1,11 +1,11 @@
-package work_directory;
+package work.directory;
 
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
 
 import static io.restassured.RestAssured.given;
-import static work_directory.Constants.*;
+import static work.directory.Constants.*;
 
 public class UserAPI {
 

@@ -1,4 +1,4 @@
-package page_objects;
+package page.objects;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -6,7 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import work_directory.Constants;
+import work.directory.Constants;
 
 public class CabinetPage {
 
@@ -21,25 +21,25 @@ public class CabinetPage {
 
     @Step("Нажатие на кнопку Конструктор")
     public void constructorButtonClick() {
-        new WebDriverWait(driver, 60)
+        new WebDriverWait(driver, 15)
                 .until(ExpectedConditions.elementToBeClickable(constructorButton));
         driver.findElement(constructorButton).click();
     }
 
     @Step("Нажатие на лого")
     public void headerLogoClick() {
-        new WebDriverWait(driver, 60)
+        new WebDriverWait(driver, 15)
                 .until(ExpectedConditions.elementToBeClickable(logo));
         driver.findElement(logo).click();
     }
 
     @Step("Нажатие на 'Выход'")
     public void exitButtonClick() {
-        new WebDriverWait(driver, 60)
+        new WebDriverWait(driver, 15)
                 .until(ExpectedConditions.elementToBeClickable(exitButton));
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(exitButton));
         driver.findElement(exitButton).click();
-        new WebDriverWait(driver, 30)
+        new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.urlToBe(Constants.LOGIN_PAGE_URL));
     }
 

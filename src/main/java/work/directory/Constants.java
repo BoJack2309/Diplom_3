@@ -1,4 +1,4 @@
-package work_directory;
+package work.directory;
 
 public class Constants {
 

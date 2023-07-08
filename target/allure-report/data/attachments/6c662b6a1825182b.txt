@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: RegistrationTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.891 s <<< FAILURE! - in RegistrationTest
+registrationTest(RegistrationTest)  Time elapsed: 9.5 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<....nomoreparties.site/[login]> but was:<....nomoreparties.site/[register]>
+	at RegistrationTest.registrationTest(RegistrationTest.java:48)
+
